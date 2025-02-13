@@ -1,5 +1,4 @@
-
-import CoursePage from "./pages/CoursePage";
+import ApplicationForm from "./components/ApplicationForm";
 
 
 
@@ -7,10 +6,7 @@ import CoursePage from "./pages/CoursePage";
 const App = () => {
   return (
     <div>
-     
-
-      
-  < CoursePage />
+    <ApplicationForm />
     
     </div>
   );
