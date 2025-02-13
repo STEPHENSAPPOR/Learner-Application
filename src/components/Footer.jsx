@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <div className="bg-blue-900 text-white py-6 px-10">
       <div className="flex justify-between items-center">
-        {/* Logo */}
+    
         <div>
           <img src={footerImage} alt="Client Logo" className="w-[180px]" />
         </div>
 
-        {/* Footer Links */}
+       
         <div className="flex space-x-16">
           <div>
             <h3 className="text-lg font-semibold">Menu</h3>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright & Back to Top */}
+      
       <div className="mt-6 flex justify-between border-t border-gray-400 pt-4">
         <p className="flex items-center">
           <MdCopyright className="mr-1" /> 2025 - G-client, All rights reserved

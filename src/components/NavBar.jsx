@@ -1,24 +1,21 @@
+import React from 'react';
 import { FiLogIn } from "react-icons/fi";
+import logo from "../assets/images/logo.png";
 
 const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-3 shadow-md bg-white">
-      {/* Left Section: Logo */}
-      <div className="flex items-center space-x-2">
-        <span className="text-blue-600 font-bold text-lg">C</span>
-        <span className="text-black font-semibold">L<span className="text-blue-600">Client</span></span>
+    <nav className="flex items-center justify-between px-12 py-3 rounded-sm bg-white shadow-sm">
+      <div className="flex items-center space-x-6">
+        <img src={logo} alt="Logo" className="h-5" />
+        <div className="flex space-x-6 text-black text-sm font-medium">
+          <a href="#" className="hover:text-gray-700">Home</a>
+          <a href="#" className="hover:text-gray-700">Courses</a>
+        </div>
       </div>
-
-      {/* Center Section: Links */}
-      <div className="flex space-x-6 text-gray-700">
-        <a href="#" className="hover:text-blue-600">Home</a>
-        <a href="#" className="hover:text-blue-600">Courses</a>
-      </div>
-
-      {/* Right Section: Login Button */}
-      <button className="flex items-center space-x-1 border border-blue-600 text-blue-600 px-3 py-1 rounded-md hover:bg-blue-100">
+      
+      <button className="flex items-center space-x-1 border border-blue-500 text-blue-600 px-4 py-1.5 rounded-md hover:bg-blue-100 text-sm font-semibold">
         <span>Login</span>
-        <FiLogIn />
+        <FiLogIn size={14} />
       </button>
     </nav>
   );

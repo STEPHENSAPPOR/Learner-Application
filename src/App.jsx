@@ -1,4 +1,7 @@
-import ApplicationForm from "./components/ApplicationForm";
+import Home from "./pages/Home";
+
+
+
 
 
 
@@ -6,8 +9,8 @@ import ApplicationForm from "./components/ApplicationForm";
 const App = () => {
   return (
     <div>
-    <ApplicationForm />
     
+    <Home />
     </div>
   );
 }
